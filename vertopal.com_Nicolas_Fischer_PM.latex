@@ -1,0 +1,339 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{NICOLAS FISCHER}
+
+\href{tel:+4552632303}{+45 52 63 23 03} \textbar{}
+\href{mailto:nicokaniakf@gmail.com}{\nolinkurl{nicokaniakf@gmail.com}}
+\textbar{} Nærum, HS, Denmark \textbar{}
+\href{https://linkedin.com/in/nicolas-andres-fischer/}{linkedin.com/in/nicolas-andres-fischer/}
+
+Project Manager \textbar{} Engineering \& Production Project Delivery
+
+\textbf{PROFESSIONAL SUMMARY}
+
+Project management and engineering delivery professional with 10+ years
+of experience coordinating technical projects, stakeholders, suppliers,
+and cross-functional teams from planning through implementation. Brings
+strengths in project planning, schedule and risk follow-up, requirements
+definition, prototyping, and clear stakeholder communication, supported
+by delivery of engineering and production-related initiatives across
+equipment, software, and process improvement. Experienced in supplier
+troubleshooting, manufacturing documentation, project-tracking
+workflows, and presenting progress to keep work aligned with quality,
+compliance, and delivery needs.
+
+\textbf{PROFESSIONAL EXPERIENCE}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{MASH Makes} & \textbf{January 2022 - April 2026} \\
+\emph{Project and Supply Management Engineer} & \emph{Copenhagen,
+Denmark} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Coordinated a technical project team end-to-end, driving a prioritized
+  backlog through root cause analysis, requirement definition, and
+  prototyping in a fast-changing environment
+\item
+  Drove a proprietary gasification reactor project proactively from
+  concept through implementation, working independently with minimal
+  supervision
+\item
+  Managed communication and technical troubleshooting with global
+  suppliers across Asia and Africa, resolving quality and performance
+  issues directly
+\item
+  Introduced automated data pipelines and project-tracking workflows to
+  reduce manual overhead and improve execution visibility and
+  operational readiness for MLOps/LLMOps environments, supporting
+  automation and continuous validation.
+\item
+  Implemented AI agents and agentic workflows, including database
+  vectorization and tailored harnesses, to automate research and testing
+  activities.
+\item
+  Established GitHub CI/CD pipelines for cross-platform compilation and
+  delivery of C++ software and web applications across macOS, Windows,
+  and Linux environments.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\emph{Mechanical Design \& Prototype Specialist} & \textbf{April 2021 -
+April 2026} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Provide CAD modeling and document management solutions that streamline
+  the design process.
+\item
+  Develop and oversee prototyping procurement for R\&D
+\item
+  Set up and configure virtual environments and simulation units.
+\item
+  Manage design processes to ensure timely project completion.
+\item
+  Design and develop CAD models and documentation for innovative
+  solutions, resulting in streamlined manufacturing processes and
+  reduced costs.
+\item
+  Develop technical draft documents for manufacturing, ensuring accuracy
+  and compliance with industry standards.
+\item
+  Maintain and optimize 3D designs and specifications for improved
+  product performance and reliability.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\emph{Design \& Documentation Engineer/ Ingeniør} & \textbf{January 2020
+- April 2026} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Owned 3D printing and prototyping from initial concept sketches
+  through tested physical prototypes, moving ideas into evaluated
+  designs for R\&D teams.
+\item
+  Translated design intent into manufacturable prototype specifications
+  and coordinated supplier procurement, aligning R\&D requirements with
+  production capabilities.
+\item
+  Configured virtual environments and simulation units to evaluate
+  designs before physical builds, helping teams identify design
+  considerations earlier in development.
+\item
+  Produced CAD models and manufacturing documentation that informed cost
+  and manufacturability decisions throughout product design and
+  production planning.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{DTU} & \textbf{January 2021 - February 2021} \\
+\emph{Course responsible / Teaching assistant} & \emph{Copenhagen,
+Denmark} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Led a DTU academic course integrating innovation across solar and
+  architectural fields, coordinating a competition project planned for
+  China.
+\item
+  Guided students in applying design thinking and solar technologies to
+  architectural design, emphasizing sustainable, energy-efficient
+  solutions through clear instruction and discussion.
+\item
+  Fostered critical thinking and creative problem-solving by
+  facilitating complex information, encouraging participation, and
+  leading discussions.
+\item
+  Course details: https://auroradtu.com/
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{DevLab} & \textbf{January 2019 - December 2019} \\
+\emph{Coordination \& Communication Manager} & \emph{Odense, Denmark} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Delivered safety training on prototyping tools, preparing laboratory
+  users to operate equipment safely and follow relevant safety
+  practices.
+\item
+  Updated DevLab's website and social media channels, maintaining
+  consistent information for laboratory users and stakeholders.
+\item
+  Increased website traffic and social media engagement by 25\% through
+  targeted updates to DevLab's digital channels and online content.
+\item
+  Planned and coordinated laboratory events, increasing attendance by
+  30\% through organized promotion and stakeholder communication.
+\item
+  Designed visual materials for online and offline channels to support
+  communication about laboratory activities.
+\item
+  Maintained communication with involved parties, coordinating updates
+  on operational and IT-security matters to support clear information
+  flow.
+\item
+  Coordinated ongoing communication with involved parties on IT-security
+  matters, supporting alignment on security concerns across laboratory
+  activities.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{NCC Net connection International} & \textbf{January 2015 -
+December 2016} \\
+\emph{Project Administrator for Electrical security} & \emph{Buenos
+Aires, Argentina} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Managed high-budget electrical-security projects, coordinating
+  delivery to achieve timely, within-budget completion while tracking
+  project milestones and resolving delivery risks.
+\item
+  Monitored and analyzed project performance, prepared progress reports
+  for senior management and stakeholders, and coordinated updates to
+  maintain alignment on delivery status.
+\item
+  Conducted risk assessments and followed up on mitigation strategies,
+  achieving zero safety incidents across electrical-security project
+  activities.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{Positivo BGH} & \textbf{January 2012 - December 2015} \\
+\emph{After Sales Analyst and Government Tenders} & \emph{Buenos Aires,
+Argentina} \\
+\bottomrule()
+\end{longtable}
+
+\begin{itemize}
+\item
+  Managed the Plan S@rmiento after-sales project, supporting
+  satisfaction and retention across 250K+ active terminals nationwide.
+\item
+  Analyzed service data to identify quality improvements, contributing
+  to a 20\% increase in customer satisfaction.
+\item
+  Supported continuation of future government tenders.
+\end{itemize}
+
+\textbf{EDUCATION}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{Technical University of Denmark} & \textbf{May 2019 - October
+2021} \\
+\emph{Master\textquotesingle s, Engingeering Design and Innovation} & \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
+\toprule()
+\endhead
+\textbf{University of Southern Denmark} & \textbf{September 2016 - May
+2019} \\
+\emph{Bachelor\textquotesingle s, Engineering Product developement \&
+Innovation} & \\
+\bottomrule()
+\end{longtable}
+
+\textbf{SKILLS}
+
+\textbf{Skills:} Project Management, Agile, Management,
+Excel/Numbers/Sheets, Data Analysis, Business Analytics, CAD, Product
+Design, 3D Modeling, Autodesk Inventor, FEM/FEA, AI, Business Strategy,
+C\#, CRM, Python, Word/Pages/Docs, WordPress, piping systems,
+commissioning, contractors, pharma, life science, construction,
+installation
+
+\textbf{Languages:} Danish, French, Portuguese, Spanish
+
+\end{document}

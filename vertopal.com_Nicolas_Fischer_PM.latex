@@ -1,4 +1,4 @@
-% Options for packages loaded elsewhere
+%This guy happened Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
@@ -16,7 +16,7 @@
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% Use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim Environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
   \usepackage[]{microtype}
@@ -57,19 +57,87 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+
+\definecolor{maintext}{HTML}{262626}
+\definecolor{muted}{HTML}{777777}
+\definecolor{timeline}{HTML}{E5E5E5}
+\definecolor{dotgray}{HTML}{ADADAD}
+\definecolor{brandgreen}{HTML}{648D78}
+
+% Text styles
+\newcommand{\roletitle}[1]{%
+  {\fontsize{12}{15}\selectfont\bfseries #1\par}
+}
+
+\newcommand{\metadata}[1]{%
+  {\color{muted}\fontsize{10}{13}\selectfont #1\par}
+}
+
+\newcommand{\skills}[1]{%
+  \vspace{8pt}
+  {\fontsize{10}{13}\selectfont
+   \(\diamond\)\ \textbf{#1}\par}
+}
+
+% Each role gets a timeline dot and vertical line.
+% Use [last] for the final role, which has no line below it.
+\newtcolorbox{role}[1][]{%
+  enhanced,
+  frame hidden,
+  interior hidden,
+  boxrule=0pt,
+  sharp corners,
+  boxsep=0pt,
+  left=24pt,
+  right=0pt,
+  top=0pt,
+  bottom=14pt,
+  before skip=0pt,
+  after skip=0pt,
+  overlay={
+    \draw[timeline,line width=2pt]
+      ([xshift=7pt,yshift=-15pt]frame.north west)
+      --
+      ([xshift=7pt,yshift=5pt]frame.south west);
+    \fill[dotgray]
+      ([xshift=7pt,yshift=-7pt]frame.north west)
+      circle[radius=2.5pt];
+  },
+  #1
+}
+
+\tcbset{
+  last/.style={
+    overlay={
+      \draw[timeline,line width=2pt]
+        ([xshift=7pt,yshift=-15pt]frame.north west)
+        --
+        ([xshift=7pt]frame.south west);
+      \fill[dotgray]
+        ([xshift=7pt,yshift=-7pt]frame.north west)
+        circle[radius=2.5pt];
+    }
+  }
+}
+
 \author{}
 \date{}
 
 \begin{document}
 
-\textbf{NICOLAS FISCHER}
+\begin{center}
+{\LARGE \textbf{NICOLAS FISCHER}}
+\end{center}
+{\large Mechanical Engineer}
 
 \href{tel:+4552632303}{+45 52 63 23 03} \textbar{}
 \href{mailto:nicokaniakf@gmail.com}{\nolinkurl{nicokaniakf@gmail.com}}
 \textbar{} Nærum, HS, Denmark \textbar{}
 \href{https://linkedin.com/in/nicolas-andres-fischer/}{linkedin.com/in/nicolas-andres-fischer/}
 
-Project Manager \textbar{} Engineering \& Production Project Delivery
 
 \textbf{PROFESSIONAL SUMMARY}
 
@@ -86,16 +154,23 @@ compliance, and delivery needs.
 
 \textbf{PROFESSIONAL EXPERIENCE}
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
-\toprule()
-\endhead
-\textbf{MASH Makes} & \textbf{January 2022 - April 2026} \\
-\emph{Project and Supply Management Engineer} & \emph{Copenhagen,
-Denmark} \\
-\bottomrule()
-\end{longtable}
+% COMPANY HEADER
+\begin{minipage}[t]{\linewidth}
+  \vspace{0pt}
+  {\fontsize{12}{15}\selectfont\bfseries MASH Makes\par}
+  \vspace{2pt}
+  {\fontsize{10}{13}\selectfont
+   Full-time \(\cdot\) January 2020 - April 2026\par}
+  \metadata{Copenhagen, Denmark}
+\end{minipage}
+
+\vspace{10pt}
+
+% ROLE 1
+\begin{role}
+  \roletitle{Project and Supply Management Engineer}
+  \metadata{January 2022 - April 2026}
+  \metadata{Copenhagen, Denmark}
 
 \begin{itemize}
 \item
@@ -124,16 +199,13 @@ Denmark} \\
   delivery of C++ software and web applications across macOS, Windows,
   and Linux environments.
 \end{itemize}
+\end{role}
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
-\toprule()
-\endhead
-\emph{Mechanical Design \& Prototype Specialist} & \textbf{April 2021 -
-April 2026} \\
-\bottomrule()
-\end{longtable}
+% ROLE 2
+\begin{role}
+  \roletitle{Mechanical Design \& Prototype Specialist}
+  \metadata{April 2021 - April 2026}
+  \metadata{Copenhagen, Denmark}
 
 \begin{itemize}
 \item
@@ -156,16 +228,13 @@ April 2026} \\
   Maintain and optimize 3D designs and specifications for improved
   product performance and reliability.
 \end{itemize}
+\end{role}
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
-\toprule()
-\endhead
-\emph{Design \& Documentation Engineer/ Ingeniør} & \textbf{January 2020
-- April 2026} \\
-\bottomrule()
-\end{longtable}
+% ROLE 3
+\begin{role}[last]
+  \roletitle{Design \& Documentation Engineer/ Ingeniør}
+  \metadata{January 2020 - April 2026}
+  \metadata{Copenhagen, Denmark}
 
 \begin{itemize}
 \item
@@ -185,6 +254,7 @@ April 2026} \\
   and manufacturability decisions throughout product design and
   production planning.
 \end{itemize}
+\end{role}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
